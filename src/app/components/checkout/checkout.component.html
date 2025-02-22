@@ -1,4 +1,20 @@
-<div class="form-group">
-  <div id="onvoPay"></div>
-  <button #payButton id="payButton" class="btn">Completar Pedido</button>
+
+<div class="container">
+  <div class="checkout-grid">
+      <div class="checkout-form">
+        <div class="form-group">
+          <div id="onvoPay"></div>
+          <button #payButton id="payButton" class="btn">Completar Pedido</button>
+        </div>
+      </div>
+      <div class="order-summary">
+          <h2>Resumen del Pedido</h2>
+          <div id="order-items">
+              <!-- Order items will be dynamically added here -->
+          </div>
+          <div class="order-total">
+              Total: $<span id="order-total">0.00</span>
+          </div>
+      </div>
+  </div>
 </div>

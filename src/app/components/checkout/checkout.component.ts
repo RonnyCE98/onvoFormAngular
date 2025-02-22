@@ -55,7 +55,7 @@ export class CheckoutComponent implements OnInit{
         });
       },
       publicKey: 'onvo_test_publishable_key_2auscb5hj84g8bAPdT4kq_92vKrb1v0681beBEKrjL16AaZeqdLvGnyQS9qc9IQEYWibwN95SQiqG_GiWIaTaQ',
-      paymentIntentId : "cm7gmdtpu1yjufdabxx48agx9",
+      paymentIntentId : "cm7gmhlex1s50xkhkulbdg9pk",
       paymentType: "one_time",
       manualSubmit: true,
       });
