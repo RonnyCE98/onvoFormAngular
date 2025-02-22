@@ -1,0 +1,20 @@
+.button {
+  height: 48px;
+  -moz-box-align: center;
+  place-items: center;
+  -moz-box-pack: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 5px;
+  transition: 200ms linear;
+  color: rgb(255, 255, 255);
+  position: relative;
+  background-color: rgb(9, 21, 88);
+  border: transparent;
+  padding: 14px;
+  opacity: 1;
+  cursor: pointer;
+  display: flex;
+  width: 100%;
+  min-width: unset;
+}
