@@ -1,11 +1,13 @@
 import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
+import Swal from 'sweetalert2';
 declare var onvo: any;
 @Component({
   selector: 'app-checkout',
   standalone: true,
   imports: [],
   templateUrl: './checkout.component.html',
-  styleUrl: './checkout.component.css'
+  styleUrl: './checkout.component.css',
+  providers: [],
 })
 export class CheckoutComponent implements OnInit{
   constructor(private renderer: Renderer2) {
@@ -46,9 +48,14 @@ export class CheckoutComponent implements OnInit{
       },
       onSuccess : (data: any) => {
         console.log('success', data);
+        Swal.fire({
+          title: "Exito",
+          text: "Pago Exitoso!",
+          icon: "success"
+        });
       },
       publicKey: 'onvo_test_publishable_key_2auscb5hj84g8bAPdT4kq_92vKrb1v0681beBEKrjL16AaZeqdLvGnyQS9qc9IQEYWibwN95SQiqG_GiWIaTaQ',
-      paymentIntentId : "cm7fetoqa15dzjddjyt6uf2yc",
+      paymentIntentId : "cm7gmdtpu1yjufdabxx48agx9",
       paymentType: "one_time",
       manualSubmit: true,
       });
